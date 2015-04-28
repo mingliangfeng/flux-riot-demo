@@ -141,7 +141,7 @@ module.exports = flux_riot
 
 },{"flux":3,"object-assign":7,"riot/riot":8}],3:[function(require,module,exports){
 /**
- * Copyright (c) 2014, Facebook, Inc.
+ * Copyright (c) 2014-2015, Facebook, Inc.
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
@@ -1809,7 +1809,7 @@ var riot = require('riot');
 Currencies = require('../../constants/app_constants.coffee').Currencies
 var shopping = require('../../actions/shopping.coffee')
 
-riot.tag('product-list', '<div> <div class="product" each="{ opts.items }"> <img class="product-img" riot-src="/images/{ image }"></img> <div class="product-desc"> <h3>{ title } - { Currencies.POUND }{ price }</h3> <button class="{ \'pure-button\': true, \'pure-button-primary\': true, \'pure-button-disabled\': quantity <= 0}" onclick="{ parent.add2Cart }">Add to cart</button> </div> <div class="clearfix"></div> </div> </div>', function(opts) {
+riot.tag('product-list', '<div> <div class="product" each="{ opts.items }"> <img class="product-img" riot-src="images/{ image }"></img> <div class="product-desc"> <h3>{ title } - { Currencies.POUND }{ price }</h3> <button class="{ \'pure-button\': true, \'pure-button-primary\': true, \'pure-button-disabled\': quantity <= 0}" onclick="{ parent.add2Cart }">Add to cart</button> </div> <div class="clearfix"></div> </div> </div>', function(opts) {
 
   this.add2Cart = function(e) {
     if (e.item.quantity > 0) shopping.add2Cart(e.item)
