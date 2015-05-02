@@ -7,6 +7,7 @@ var flux_riot = require('flux-riot')
   <div class="pure-g">
     <div class="pure-u-1 pure-u-sm-3-5 list-grid">
       <h1>flux-riot Shop Demo</h1>
+      <div class="source"><a href="https://github.com/mingliangfeng/flux-riot-demo">source code</a></div>
       <shop></shop>
     </div>
     <div class="pure-u-1 pure-u-sm-2-5 cart-grid">
