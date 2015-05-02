@@ -46,6 +46,9 @@
 .container .checkout {
   margin-left: 20px;
 }
+.container .source {
+  margin-bottom: 20px;
+}
 .text-right {
   text-align: right;
 }
